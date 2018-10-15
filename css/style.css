@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/* ------------------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------------------- */
+
+
+/* 
+	Global
+	Setting Navbar
+	Setting CONTENTS
+*/
+
+
+
+/* ------------------------------------------------------------- */
+/* GLOBAL */
+/* ------------------------------------------------------------- */
+
+html {
+	font-family: 'Lato' , sans-serif;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container-section {
+	width: 100%;
+}
+
+.div-font-contents {
+	letter-spacing: 1.2px;
+	word-spacing: 1px;
+	line-height: 1.3em;
+	font-weight: 300;
+}
+
+.line-under {
+	width: 300px;
+	margin-top: -20px;
+	border: solid 0.1em #019788;	
+}
+
+.head-section {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 1em;
+	font-size: 1.5em;
+}
+
+.bg-section-odd {
+	background-color: #f0f0f0;
+}
+
+.bg-section-even {
+	background-color: #fff;
+}
+
+.bold-text {
+	font-weight: 400;
+}
+
+/* ------------------------------------------------------------- */
+/* Setting Navbar */
+/* ------------------------------------------------------------- */
+
+/* 01534b-016157-016e63-017c70-018a7c */
+
+.website-t {
+	color: #01534b;
+}
+
+.website-e {
+	color: #016157;
+}
+
+.website-c {
+	color: #016e63;
+}
+
+.website-h {
+	color: #017c70;
+}
+
+.website-i {
+	color: #018a7c;
+}
+
+.website-n {
+	color: #019788;
+}
+
+.nav-bar {
+	background-color: rgba(255,255,255,0.90);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+
+}
+
+.header-name {
+	text-align: center;
+	padding-top: 0.05em;
+	padding-bottom: 0.01em;
+	font-size: 3.5em;
+	font-weight: 300;
+	color: #000;
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* ------------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------------------- */
+
+.btn {
+	color: #000;
+	text-decoration: none;
+	border: solid 0.1em #000;
+	padding: 0.5em;
+	border-radius: 1em;
+	display:inline-block;
+	-webkit-transition: 0.5s; /* Safari and Chrome */
+	-moz-transition: 0.5s; /* Firefox */
+	transition: 0.5s; 
+}
+
+.btn-wrapper{
+	text-align: center;
+	padding: 1em ;
+	margin-top: 5em;
+}
+
+.btn-watch-video {
+	color: #000000;
+	border: solid 0.1em #000000; 
+
+}
+
+.btn-watch-video:link .btn-watch-video:visited  {
+	color: #000;
+	
+	
+}
+
+.btn-watch-video:active {
+	color: #019788;
+	border: solid 0.1em #019788; 
+}
+
+.btn-watch-video:hover {
+	color: #fff;
+	background-color: #000000;
+	-webkit-transition: 0.5s; /* Safari and Chrome */
+	-moz-transition: 0.5s; /* Firefox */
+	transition: 0.5s; 
+	
+}
+
+/* ------------------------------------------------------------- */
+/* Setting Social Button */
+/* ------------------------------------------------------------- */
+
+
+
+.nav-sidebar-contract {
+	height: 100%;
+	width: 45px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 3%;
+	overflow-x: hidden;
+	transform: translateX(50%);
+
+}
+
+.nav-sidebar-contract a {
+	text-decoration: none;
+	display: block;
+	margin-top: 10px;
+}
+
+a svg ,a svg circle  {
+	display: block;
+	max-height: 30px;
+	position: absolute;
+	fill: transparent !important;
+	transform: translateX(-45.5%);
+	padding: 6px 0;
+	top: 300px;
+	left: 0;
+}
+
+.icon-gmail , .no-hover-path-gmail {
+	margin-top: 50px;
+	fill: #D80027;
+	transition: fill 2s ease;
+}
+ 
+.icon-facebook , .no-hover-path-fb {
+	fill: #466fc7;
+	transition: fill 2s ease;
+}
+
+a:hover .hover-path {
+	fill: #019788 ;
+	transition-duration: 2s;
+}
+
+a .circle-icon{
+	stroke-width: 35px;
+	stroke-dasharray: 0,0;
+	stroke-dashoffset: 1000;
+	transition-duration: 2s;
+}
+
+a .circle-color-fb {
+	stroke: #466fc7;
+	
+	
+}
+
+a .circle-color-gmail {
+	stroke: #D80027;
+}
+
+a:hover .circle-icon {
+	stroke-dasharray: 2000,1500 !important;
+	stroke-dashoffset: 1000;
+	stroke: #019788;
+	transition-duration: 2s;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* Video */
+/* ------------------------------------------------------------- */
+
+
+.video-container {
+	position:relative;
+	padding: 1em 0 ;
+	overflow: hidden;
+	text-align: center;
+	margin: 0.5em auto 0;
+	
+}
+
+.video-container iframe {
+	position:relative;
+	width:80%;
+	height:600px;
+	display: block;
+	text-align: center;
+	margin: 1em auto ;
+}
+
+.top-from-nav {
+	top: 0;
+	margin-top: 4%;
+}
+
+/* ------------------------------------------------------------- */
+/* Setting CONTENTS */
+/* ------------------------------------------------------------- */
+
+.container-section-aboutme {
+	width: 50%;
+	display: block;
+	background-color: #fff;
+	margin: 1em auto 0;
+	padding: 1em;
+	color: #000;
+	font-weight: 300;
+}
+
+.content-aboutme {
+	text-align: left;
+	padding: 0 20%;
+	font-weight: 300;
+}
+
+.picture-me {
+	align-content: center;
+	width: 60%;
+	margin: 1em 0;
+}
+
+.picture-align {
+	text-align: center;
+}
+
+.head-content-aboutme {
+	text-align: center;
+}
+
+.topic-content {
+	text-align: center;
+}
+
+.line-with-content {
+	width: 450px;
+	border: solid 0.02em #019788;
+	margin-top: -5px; 
+}
+
+.line-end-content {
+	width: 450px;
+	border: solid 0.1em #019788;
+	margin-top: -5px; 
+}
+
+.grid-container-skills {
+	width: 75%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 49% 49%;
+	grid-column-gap: 2%;
+
+}
+
+.grid-2-skill, .grid-1-skill {
+	width: 100%;
+}
